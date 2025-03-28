@@ -25,9 +25,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      #- name: Set up Python path
-       # run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV
-
+          
       - name: Install pytest
         run: pip install pytest #Only one dependency, so no need for a venv or requirements.txt file
 

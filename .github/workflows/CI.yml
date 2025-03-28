@@ -23,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: latest
+          python-version: '3.11'
 
       - name: Install pytest
         run: pip install pytest #Only one dependency, so no need for a venv or requirements.txt file

@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false #makes sure all tests run even if one fails
       matrix:
-        os: [ubuntu-20.04, macos-latest, windows-latest]
+        os: [macos-latest, windows-latest]
     
     name: Test
     runs-on: ${{matrix.os}}

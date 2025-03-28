@@ -7,7 +7,7 @@ import src.function_side_effects_solution as fs
 
 
 
-
+#Unit tests for the adding function
 def test_add_constant():
     list1 = [1, 2, 3, 4, 5]
     list2 = [9999, 1, 2, 9999, 3]
@@ -20,7 +20,7 @@ def test_add_constant():
     fs.add_constant(list2, 1)
     assert(list2 == [9999, 2, 3, 9999, 4])
 
-
+#Unit tests for the multiplication function
 def test_multiply_constant():
     list1 = [1, 2, 3, 4, 5]
     list2 = [9999, 1, 2, 9999, 3]
@@ -28,10 +28,10 @@ def test_multiply_constant():
     fs.multiply_by_constant(list1, 2)
     assert(list1 == [2, 4, 6, 8, 10])
     fs.multiply_by_constant(list1, .1)
-    assert(list1 == [2*.1, 4*.1, 6*.1, 8*.1, 10*.1]) #Ccan't just write out [.2, .4, .6, .8, 1] because the floats will be slightly inacurate
+    assert(list1 == [2*.1, 4*.1, 6*.1, 8*.1, 10*.1]) #Can't just write out [.2, .4, .6, .8, 1] because the floats will be slightly inacurate
 
 
-
+#Unit tests for the masking function
 def test_mask_element():
     list = [10, 20, 30, 40, 50]
 
@@ -40,3 +40,8 @@ def test_mask_element():
     fs.mask_element(list, 0)
     fs.mask_element(list, 4)
     assert(list == [9999, 20, 9999, 40, 9999])
+
+
+def test_find_average():
+    list1 = [1, 2, 3, 4, 5]
+    pass

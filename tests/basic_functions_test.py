@@ -1,6 +1,6 @@
 import pytest
 #import src.basic_functions as bf
-from .. src import basic_functions_fixed as bf
+import src.basic_functions_fixed as bf
 
 
 

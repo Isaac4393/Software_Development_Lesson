@@ -1,6 +1,6 @@
 import pytest
 import math
-from .. src import function_side_effects_solution as fs
+import src.function_side_effects_solution as fs
 #import src.function_side_effects_solution as fs
 
 

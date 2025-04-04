@@ -10,7 +10,7 @@ def add_constant(list, constant):
     """
     for i in range(len(list)):
         if (list[i] != 9999):
-            list[i] += constant + 1
+            list[i] += constant
 
 
 

@@ -56,6 +56,7 @@ def find_average(list):
         The average of elements not equal to 9999 and not less than 0.1
     """
     counted_elements = 0
+    #test
     sum = 0
     for i in range(len(list)):
         element = list[i]

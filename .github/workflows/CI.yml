@@ -25,12 +25,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install black
-        run: pip install black
-      - name: Run black
-        run: black --check .
-          
+
       - name: Install pytest
         run: pip install pytest #Only one dependency, so no need for a venv or requirements.txt file
       - name: Run tests
         run: pytest tests
+
+      - name: Install black
+        run: pip install black
+      - name: Run black
+        run: black --check .
